@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Destination</title>
+  <link rel="stylesheet" type="text/css" href="Destinations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="top"></div>
+  <div class="first">
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <a href="#" id="logo"><img src="Assets/logoMW.png" alt=""></a>
+                <!-- <a href="#" class="logo">MaharashtraWonders</a> -->
+                <ul class="content">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="Activites.html">Activites</a></li>
+                    <button id="profile"></button>
+                    <button id="SignIn"><a href="login.html">SignIn</a></button>
+                </ul>
+                <i id="menu" class="fas fa-bars"></i>
+            </div>
+            <div class="menu-box" id="menuBox">
+                <i id="closeMenu" class="fas fa-times"></i>
+
+                <ul id="change">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Destinations.html">Destinations</a></li>
+                    <li><a href="Activites.html">Activities</a></li>
+                    <button id="profile">Profile</button>
+                    <br>
+                    <li><a href="login.html">SignIn</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+  <!-- Main content -->
+  <h1 id="">Popular Destinations</h1>
+  <main>
+    <div class="search">
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search...">
+        <button onclick="search()">Search</button>
+      </div>
+      <div class="filters">
+        <label><input type="checkbox" value="hill"> Hill Stations</label>
+        <label><input type="checkbox" value="historical"> Historical Places</label>
+        <label><input type="checkbox" value="temple"> Temples</label>
+        <label><input type="checkbox" value="temple"> Trek places</label>
+      </div>
+    </div>
+    <section class="destination">
+      <div class="destination-card hill">
+        <div class="destination-img">
+          <img src="Assets/Assets for destination/TajMahal.jpg" alt="Hill Station">
+        </div>
+        <div class="destination-info">
+          <h2>Taj Mahal</h2>
+          <p>The Taj Mahal is an iconic white marble mausoleum located in Agra, India, built by the Mughal emperor Shah
+            Jahan in memory of his wife Mumtaz Mahal.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+
+      <div class="destination-card hill">
+        <div class="destination-img">
+          <img src="Assets/Assets for destination/Amboli Hill Station (Sindhudurg).jpeg" alt="Hill Station">
+        </div>
+        <div class="destination-info">
+          <h2>Hill Station</h2>
+          <p>Amboli Hill Station is a serene hill station nestled in the Sahyadri Hills of Maharashtra, India.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="destination-card hill">
+        <div class="destination-img">
+          <img src="Assets/Assets for destination/Western Ghats (Matheran, Mahabaleshwar, Lonavala).jpeg"
+            alt="Hill Station">
+        </div>
+        <div class="destination-info">
+          <h3>Western Ghats</h3>
+          <p>The Western Ghats are a UNESCO World Heritage Site and a mountain range that runs parallel to the western
+            coast of India, covering the states of Maharashtra, Goa, Karnataka, Tamil Nadu, and Kerala. Matheran,
+            Mahabaleshwar, and Lonavala are popular hill stations located in the Western Ghats known for their scenic
+            beauty and pleasant climate.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <!-- Repeat the above destination-card div for other destinations -->
+    </section>
+  </main>
+
+<!-- footer -->
+<footer>
+  <div class="footer-content">
+      <div class="png"><img src="Assets/map.png" alt=""></div>
+      <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We are a team of passionate travelers who love to explore new places and cultures.</p>
+      </div>
+      <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul>
+              <li>Email: <a href="maharashtrawonders@gmail.com">maharashtrawonders@gmail.com</a></li>
+              <li>Phone: +91-7124454512</li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p id="copy">&copy; 2024 MaharashtraWonders. All rights reserved.</p>
+      <button id="back-to-top"><a href="#top">Back to Top</a></button>
+  </div>
+</footer>
+
+<script src="Destination.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 30px;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transform: translate(-400%, -200%);
+    animation: Animate1 0.8s ease-in-out 1s forwards, Animate2 0.5s ease-in-out 1.8s forwards;
+}
+
+@keyframes Animate1 {
+    to {
+        transform: translateX(30%);
+    }
+}
+
+@keyframes Animate2 {
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.container-form {
+    gap: 40px;
+    padding: 20px 60px 30px 20px;
+    background: white;
+    box-shadow: 0px 0px 50px 0px gray;
+    opacity: 0;
+    transform: rotate(45deg) translateX(100%);
+    animation: bgAnimation1 1s ease-in-out forwards 0.5s;    
+}
+
+@keyframes bgAnimation1 {
+    from {
+        opacity: 0;
+        transform: scale(0) rotate(45deg) translate(-100%, -100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg) translateX(0%);
+    }
+}
+
+form > h1 {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.container-img {
+    background-image: url("css/login/bridge.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+}
+
+.container-input {
+    margin: 10px 0px;
+}
+
+.container-input input,
+select {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    padding: 15px 0px 5px 15px;
+    width: 300px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    outline-style: none;
+    border-bottom: 1px solid black;
+    color: #000;
+}
+
+select {
+    padding: 15px 0px 5px 10px;
+}
+
+.container-input input::placeholder,
+select,
+option {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-submit input {
+    height: 50px;
+    width: 300px;
+    font-size: 16px;
+    background-color: #004bff;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-weight: bold;
+    margin: 30px 0px 0px 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.input-submit input:hover {
+    background-color: #0038e6;
+}
+
+.NameInputContainer {
+    display: flex;
+    gap: 0px 20px;
+}
+
+#fname,
+#lname {
+    width: 140px;
+}
+
+.loginRedirect {
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.loginRedirect a {
+    color: #004bff;
+}

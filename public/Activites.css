@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-image: linear-gradient(to right,navy  , #003049); */
+  background-color: white;
+}
+
+ul #profile {
+  background: url(Assets/profile-icon-png-890.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  z-index: 1;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.first {
+  height: 18vh;
+}
+
+.navbar {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: orange;
+  overflow: hidden;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#menu {
+  visibility: hidden;
+}
+
+/* Sign in */
+#SignIn {
+  background-color: #57ff1e;
+  border: none;
+  font-weight: 900;
+  color: navy;
+  padding: 6px 4px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: auto;
+  cursor: pointer;
+  margin: 2px;
+  margin-right: 10px;
+}
+
+#SignIn:hover {
+  scale: 1.1;
+  transition: transform 1s ease-in;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.content {
+  display: flex;
+  list-style-type: none;
+}
+
+.content li {
+  margin-right: 20px;
+}
+
+
+
+.content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.content li {
+  margin: 0 15px;
+}
+
+.content li a {
+  font-weight: bolder;
+  color: orange;
+  text-decoration: none;
+  padding: 10px;
+  z-index: 1;
+  margin: auto;
+}
+
+.content li:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo img {
+  height: 80px;
+  border-radius: 35px;
+  background-color: gray;
+}
+
+i#menu {
+  color: black;
+  position: relative;
+  left: 22%;
+  bottom: 35px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35vw;
+}
+
+/* footer */
+footer {
+
+  width: 100%;
+  background-color: #714423;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+  padding: auto;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+
+  width: 100%;
+  padding: 10px 0;
+  background-color:  #6b330b;;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back-to-top {
+  background-color: #fff;
+  color: #f24444;
+  background-color: #714423;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #1d0000;
+  color: #fff;
+}
+
+.png img {
+  height: 100px;
+}
+
+.png {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: justify;
+    padding: 4px;
+
+  }
+
+  .png {
+    margin-top: 20px;
+  }
+
+  .png img {
+    height: 50px;
+
+  }
+
+}
+
+/* making the navbar responsive */
+@media screen and (max-width: 900px) {
+  .hide {
+    visibility: hidden;
+
+  }
+
+  #menu {
+    visibility: visible;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+
+
+}
+
+/* Your existing CSS */
+
+/* Add this to your CSS */
+.menu-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(10, 20, 30, 0.9);
+  color: orange;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  list-style-type: none;
+}
+
+.menu-box.show {
+  transform: translateX(0);
+}
+
+#change a {
+  text-decoration: none;
+  color: #010c69;
+  list-style: none;
+}
+
+#change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#change li {
+  list-style-type: none;
+}
+
+#change a {
+  padding: 20px;
+  margin: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: 800;
+
+
+}
+
+#change button,
+li :hover {
+  cursor: pointer;
+  scale: 1.12;
+  transition: ease-in 0.2;
+}
+
+#change li,
+button {
+  margin: 10px;
+}
+
+#change a,
+#change button {
+  padding:  2px 15px ;
+  margin: 10px;
+  font-size: 24px;
+  color: orange;
+  background-color: #0a0154;
+  border-radius: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+#change a:hover,
+#change button:hover,
+#change li:hover a {
+
+  color: rgb(154, 100, 0);
+  transform: scale(1.12);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#change button {
+  width: 40%;
+  color: orange;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: block;
+    color: white;
+  }
+
+  .content {
+    display: none;
+  }
+
+  #menu {
+    visibility: visible;
+  }
+
+  .menu-box {
+    display: block;
+    transform: translateX(100%);
+  }
+
+
+  .menu-box.show {
+    transform: translateX(0);
+  }
+}
+
+/* Initial visibility settings */
+@media screen and (max-width: 800px) {
+  .content {
+    display: none;
+  }
+}
+
+ /* main */
+ .tour-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 90%;
+  background-color: #33ED09;
+  margin: 20px;
+}
+#num1,#num2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tour-card img {
+  width: 100%;
+  max-height: 200px; /* Set max-height for the image */
+  object-fit: cover;
+}
+
+.tour-info {
+  padding: 1rem;
+}
+
+.tour-info h2 {
+  margin-top: 0;
+}
+
+.tour-info p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #000000;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: rgb(127, 39, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.result{
+  color: #5612ED;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+/* Responsive */
+@media (min-width: 900px) {
+  .tour-card {
+    flex-direction: row;
+    align-items: stretch; /* Align items to stretch to full height */
+  }
+
+  .tour-card img {
+    max-height: none; /* Reset max-height for image */
+    width: 50%; /* Set image width to 50% in row layout */
+  }
+
+  .tour-info {
+    flex: 1;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .tour-card {
+    flex-direction: column; /* Change to column layout below 900px */
+  }
+
+  .tour-card img {
+    max-height: 200px; /* Reset max-height for image in column layout */
+    width: 100%; /* Set image width to 100% in column layout */
+  }
+}

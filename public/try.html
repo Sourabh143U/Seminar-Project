@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .content {
+            display: none; /* Hide the links by default */
+            align-items: center;
+        }
+
+        .content a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        #menu {
+            visibility: visible;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .menu-box {
+            display: none;
+            position: fixed;
+            top: 60px;
+            right: 0;
+            width: 200px;
+            height: calc(100vh - 60px);
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease-in-out;
+            z-index: 999;
+        }
+
+        .menu-box.show {
+            transform: translateX(0);
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                display: block;
+            }
+
+            .content {
+                display: none;
+            }
+
+            #menu {
+                visibility: visible;
+            }
+
+            .menu-box {
+                display: block;
+                transform: translateX(100%);
+            }
+
+            .menu-box.show {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <i id="menu" class="fas fa-bars"></i>
+            <a href="#" class="logo">MaharashtraWonders</a>
+        </div>
+    </nav>
+    <div class="menu-box" id="menuBox">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Destinations.html">Destinations</a></li>
+            <li><a href="Activites.html">Activities</a></li>
+        </ul>
+    </div>
+</header>
+
+<script>
+    const menu = document.getElementById('menu');
+    const navbar = document.getElementById('navbar');
+    const menuBox = document.getElementById('menuBox');
+
+    menu.addEventListener('click', function () {
+        navbar.classList.toggle('menu-open');
+        menuBox.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>

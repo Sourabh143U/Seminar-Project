@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+ body{
+  background: url(Assets/Assets\ for\ about/bg.jpg);
+ }
+ul #profile {
+  background: url(Assets/profile-icon-png-890.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  z-index: 1;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.first {
+  height:18vh;
+}
+
+.navbar {
+  /* background-color: rgb(255, 111, 0); */
+  background-color: #fff;
+  color: white;
+  overflow: hidden;
+  z-index: 1000;
+  /*remove this*/
+  width: 100%;
+  position: fixed;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#menu {
+  visibility: hidden;
+}
+
+/* Sign in */
+#SignIn {
+  background-color: #57ff1e;
+  border: none;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  padding: 6px 4px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: auto;
+  cursor: pointer;
+  margin: 2px;
+  margin-right: 10px;
+}
+
+#SignIn:hover {
+  scale: 1.1;
+  transition: transform 1s ease-in;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.content {
+  display: flex;
+  list-style-type: none;
+}
+
+.content li {
+  margin-right: 20px;
+}
+
+
+
+.content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.content li {
+  margin: 0 15px;
+}
+
+.content li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  z-index: 1;
+  margin: auto;
+}
+
+.content li:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+#logo img{
+  height:80px ;
+}
+i#menu{
+  color: black;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20vw;
+}
+/* footer */
+footer {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+  padding: auto;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+
+  width: 100%;
+  padding: 10px 0;
+  background-color: #222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back-to-top {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.png img {
+  height: 100px;
+}
+
+.png {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+button a {
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: justify;
+    padding: 4px;
+
+  }
+
+  .png {
+    margin-top: 20px;
+  }
+
+  .png img {
+    height: 50px;
+
+  }
+
+}
+
+/* making the navbar responsive */
+@media screen and (max-width: 900px) {
+  .hide {
+    visibility: hidden;
+
+  }
+
+  #menu {
+    visibility: visible;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24vw;
+    }
+  
+}
+
+/* Your existing CSS */
+
+/* Add this to your CSS */
+.menu-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1C1678;
+  color: #8576FF;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  list-style-type: none;
+}
+
+.menu-box.show {
+  transform: translateX(0);
+}
+
+#change a {
+  text-decoration: none;
+  color: #8576FF;
+  list-style: none;
+}
+
+#change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#change li {
+  list-style-type: none;
+}
+
+#change a {
+  padding: 20px;
+  margin: 40px;
+  font-size: 40px;
+  color: #8576FF;
+  background-color: #A3FFD6;
+  border-radius: 20px;
+  font-weight: 800;
+
+
+}
+
+#change button,
+li :hover {
+  cursor: pointer;
+  scale: 1.12;
+  transition: ease-in 0.2;
+}
+
+#change li,
+button {
+  margin: 25px;
+}
+
+#change a,
+#change button {
+  /* display: inline-block; */
+  padding: 20px;
+  margin: 40px;
+  font-size: 32px;
+  color: #8576FF;
+  background-color: #A3FFD6;
+  border-radius: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Smooth transition for transform and color */
+  cursor: pointer;
+}
+
+
+#change a:hover,
+#change button:hover,
+#change li:hover a {
+
+  color: #222;
+  transform: scale(1.12);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#change button {
+  width: 40%;
+  color: black;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: block;
+    color: white;
+  }
+
+  .content {
+    display: none;
+  }
+
+  #menu {
+    visibility: visible;
+  }
+
+  .menu-box {
+    display: block;
+    transform: translateX(100%);
+  }
+
+  .menu-box.show {
+    transform: translateX(0);
+  }
+}
+
+/* Initial visibility settings */
+@media screen and (max-width: 800px) {
+  .content {
+    display: none;
+  }
+}
+/* main */
+/* Global Reset */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Container Styles */
+.CUcontainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Row Styles */
+.row {
+  margin-bottom: 10px;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 24px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* Label Styles */
+label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Input Focus Styles */
+input[type="text"]:focus ~ label,
+textarea:focus ~ label,
+input[type="text"]:valid ~ label,
+textarea:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Button Styles */
+.submit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .col-xs-12,
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .col-md-6 {
+    float: none;
+  }
+
+  .styled-input {
+    width: 100%;
+    float: none;
+  }
+
+  .styled-input.wide {
+    width: 100%;
+  }
+
+  .styled-input[style*="float:right;"] {
+    float: none;
+  }
+}

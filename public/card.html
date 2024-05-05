@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirdi Card</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.card-container {
+    width: 70vw;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.rating p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+</style>
+<body>
+    <div class="card-container">
+        <h1>Shirdi</h1>
+        <div class="card-content">
+            <div class="image">
+                <img src="image.jpg" alt="Shirdi Image">
+            </div>
+            <div class="info">
+                <p>Shirdi is a town in the state of Maharashtra, India. It is known as the home of the late 19th-century saint Shirdi Sai Baba.</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15143.267112218145!2d74.47835875!3d19.760357850000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd0b95a44567705%3A0xd428d3453b87537e!2sShirdi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620054748302!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="rating">
+                <p>Rating: 4.5/5</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

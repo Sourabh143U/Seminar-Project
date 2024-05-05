@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body class="container-flex">
+
+    <div class="container-form container-flex">
+        <div onclick="homeLink()" id="home">BACK</div>
+        <div class="container-img"></div>
+        <form method="post" action="/SignUp">
+            <h1>REGISTRATION FORM</h1>
+            <div class="NameInputContainer container-fle">
+                <div class="container-input">
+                    <input type="text" name="fName" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="container-input">
+                    <input type="text" name="lName" id="lname" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="container-input">
+                <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Phone Number" required>
+            </div>
+            <div class="container-input">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="container-input">
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select gender</option>
+                    <option name="male" value="male">Male</option>
+                    <option name="female" value="female">Female</option>
+                    <option name="other" value="other">Other</option>
+                </select>
+            </div>
+            <div class="container-input">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <!-- <div class="container-input">
+                <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required>
+            </div> -->
+            <div class="input-submit">
+                <!-- <input type="submit" value="Submit" id="submit" name="submit"> -->
+                <button type="Submit">Submit </button>
+            </div>
+            <div class="container-input container-flex loginRedirect">
+                Already Have an Account?
+                <a href="/login">Login Here</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+</html>
